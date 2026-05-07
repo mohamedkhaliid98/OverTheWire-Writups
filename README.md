@@ -8,4 +8,5 @@ security wargame writups documenting my learning journey in offensive security.
 
 ## About Me
 A university Student in year two based in egypt, Cairo University.
-Currently leaning penetration testing and ethical hacking.
+
+Currently learning penetration testing and ethical hacking.
