@@ -10,12 +10,15 @@ Find the password stored in a file called readme in the home directory.
 
 ## Process
 First I connected to the server using SSH:
+
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 Listed the files in the directory:
+
 ls
 
 Saw a file called readme, read it:
+
 cat readme
 
 ## What I Learned
