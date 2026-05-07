@@ -8,6 +8,7 @@ Find a file in the `inhere` directory that is human-readable, 1033 bytes in size
 
 ## Process
 I used the `find` command with specific flags to filter for the exact file requirements:
+
 `find . -type f -size 1033c ! -executable`
 
 ## What I Learned
