@@ -13,7 +13,7 @@ there was two problems that i ran into, number one was the file starts and ends 
 
 So after some searching and learning about filenames and how to read the spaces between also the '--'.
 
-I used the operator '<' after cat with '\' before the spaces occur to tell the shell that there's a space in the name
+I used the operator '<' after cat with "\" before the spaces occur to tell the shell that there's a space in the name
 
 it looked like this 'cat < --spaces\ in\ the\ filename--'
 
