@@ -1,0 +1,19 @@
+# Bandit Level 32 → 33
+
+## Objective
+Escape a restricted shell that converts all input to uppercase.
+
+## Tools Used
+- Positional Parameters (`$0`)
+
+## Process
+1. Logged into Level 32 and discovered a restricted shell environment (shsh).
+2. Observed that all commands entered were automatically converted to uppercase, making standard Linux commands like `ls` or `cd` unusable.
+3. Used the shell variable `$0`, which represents the currently executing shell/program.
+4. Executing `$0` successfully broke out of the restricted environment and provided a standard Bash prompt.
+5. Navigated to `/etc/bandit_pass/` and read the password for Level 32.
+
+## What I Learned
+- **Restricted Shells:** Environments designed to limit user capabilities, often used in security "jails."
+- **Positional Parameters:** `$0` is a special variable in shell scripting that holds the path/name of the command used to invoke the current shell.
+- **Escape Techniques:** Invoking the base shell from within a restricted one is a common method for gaining full command access.
