@@ -1,4 +1,4 @@
-# Natas Level 6 → 7
+# Natas Level 5 → 6
 
 ## Objective
 Find a hidden secret stored in an included file and submit it via a POST request.
