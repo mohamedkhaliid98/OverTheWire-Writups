@@ -1,0 +1,24 @@
+# Bandit Level 30 → 31
+
+## Objective
+Locate the password for the next level by exploring hidden Git Tags within the repository.
+
+## Tools Used
+- `git tag`
+- `git show`
+- `git clone`
+
+## Process
+1. Cloned the repository for Level 30 onto the local machine.
+2. Checked the current directory and the `git log`, but found that the password had been removed from the main branch's history.
+3. Investigated alternative storage locations in Git by listing all tags using the command:
+   `git tag`
+4. Identified a tag named `secret`.
+5. Inspected the content of that specific tag using:
+   `git show secret`
+6. The command revealed the password for Level 31 which was "bookmarked" by that tag.
+
+## What I Learned
+- **Git Tags:** Tags are pointers to specific points in a repository's history, often used to mark release versions (e.g., v1.0).
+- **Hidden Data:** Even if a password is deleted from the active code (the HEAD) and the commit history of a branch, it can still exist in a Tag.
+- **Git Show:** This tool is essential for viewing the details of various Git objects, including tags and specific commits.
